@@ -67,6 +67,10 @@ The project is a standard Android Studio Gradle project and does not depend on t
 
 The workflow also runs automatically whenever changes are pushed to `main`. Android may ask you to allow installation from the browser or file manager.
 
+### If the Android SDK step fails
+
+If an earlier run says `Failed to find package 'tools'`, it used an outdated SDK setup step. Open `.github/workflows/build-apk.yml` in GitHub, choose **Edit**, and replace its contents with the current `BUILD_APK_WORKFLOW.yml` template in this repository. Commit the change, then use **Re-run all jobs**.
+
 ## Device setup
 
 1. Install and open teleRoll.
