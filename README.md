@@ -52,6 +52,19 @@ app/build/outputs/apk/debug/app-debug.apk
 
 The project is a standard Android Studio Gradle project and does not depend on the surrounding JavaScript workspace.
 
+## Build the APK from a phone with GitHub
+
+This repository includes a GitHub Actions workflow for building the debug APK without Android Studio.
+
+1. Open the repository on GitHub.
+2. Open **Actions** and choose **Build teleRoll APK**.
+3. Select **Run workflow**, choose the `main` branch, and tap **Run workflow**.
+4. Open the running workflow after it finishes successfully.
+5. Scroll to **Artifacts** and download **teleRoll-debug-apk**.
+6. Extract the downloaded ZIP and install `app-debug.apk` on your Android device.
+
+The workflow also runs automatically whenever changes are pushed to `main`. Android may ask you to allow installation from the browser or file manager.
+
 ## Device setup
 
 1. Install and open teleRoll.
