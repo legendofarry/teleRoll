@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">teleRoll</string>
+    <string name="accessibility_service_label">teleRoll Telegram assistant</string>
+    <string name="accessibility_service_description">Observes visible Telegram media download states and scrolls Telegram upward only when media is ready.</string>
+    <string name="accessibility_service_explanation">teleRoll uses AccessibilityService only to inspect Telegram's visible UI and dispatch upward scroll gestures. It never reads Telegram APIs, sends messages, reacts, joins groups, or changes account settings.</string>
+</resources>
